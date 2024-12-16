@@ -1,0 +1,51 @@
+#include "../L-62(BINARY TREE)/myclass.h"  // realitive path se class import 
+#include<map>v
+
+void levelOrderTraversal(  queue<node*> q  , vector<int>& ans )
+{
+    if (q.size() == 0) // base case 
+    {
+        return ;
+    }
+       ans.push_back(q.front()->data);
+    
+    queue<node*> q2 ;
+
+    while (!q.empty())
+    {
+
+        if ((q.front()->left != NULL) && (q.front()->right != NULL))
+        {
+        q2.push(q.front()->left);
+        q2.push(q.front()->right);
+        }
+        else if ((q.front()->left == NULL) && (q.front()->right != NULL))
+        {
+            q2.push(q.front()->right);
+        }        
+        else if ((q.front()->left != NULL) && (q.front()->right == NULL))
+        {
+            q2.push(q.front()->left);
+        }  
+        q.pop();
+    }
+
+   levelOrderTraversal( q2 , ans );
+
+   return ;
+}
+
+
+vector<int> getLeftView(node *root)
+{     vector<int> ans ;
+
+    if(root == NULL)
+    {
+        return ans ;
+    }
+    //    Write your code here
+    queue<node*> q;
+    q.push(root);
+    levelOrderTraversal(q, ans);
+    return ans ;
+}

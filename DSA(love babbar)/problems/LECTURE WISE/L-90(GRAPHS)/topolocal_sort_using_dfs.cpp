@@ -1,0 +1,20 @@
+#include<iostream>
+#include<list>
+#include<unordered_map>
+#include<vector>
+#include<stack>
+using namespace std ;
+
+void topologicSort (unordered_map<int,list<int>> adj , unordered_map<int,bool> &visited , stack<int> &ans , int node)
+{
+    visited[node]=true;
+
+    for(auto i:adj[node])
+    {
+        if(!visited[i])
+        {
+            topologicSort(adj,visited,ans,i);
+        }
+    }
+    ans.push(node);
+}

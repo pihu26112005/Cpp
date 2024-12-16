@@ -1,0 +1,22 @@
+THOOSE HOME WORK QUESTIONS WHICH ARE NOT DONE YET -->
+
+#1 : L-24 ka SEGMENTED SEIVE (100%)
+#2 : L-24 ke teeno algorithm ka mathematical proof dekhna hai (50%)
+#3 : L-24(basic math) ke last me jo HW diye the vo pdne ko aur solve krne ko (80%)
+#4 : L-6 ka 2nd QUESTION - negative decimal no. ka binary convert (100%)
+#5 : L-27 me end me codestudio me types of pinter + pointer module 2 ke 30 basic question try ko kha tha (80%)
+#6: L-35 me merge sort se INVERSION COUNT PROBLEM , GOG pe milegi 
+#7 : L-40 MCQ time cmplex + space complex ke liye 
+#8 : L-41,42 MCQ codestudio pe theory ke sath hai 
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+THOOSE QUESTION WHICH ARE COMPLETED BUT I AM NOT ABLE TO SUBMIT THEM YET -->
+#1 : L-23 ka p-48 
+#2 : L-36 ka quick sort
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+THOOSE QUESTIONS WHOOSE CODE IS CORRECT BUT YET THEY ARE NOT RUNNING -->
+#1 : L-6 KE decimal to binary vale me 
