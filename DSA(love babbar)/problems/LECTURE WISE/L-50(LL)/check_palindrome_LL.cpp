@@ -74,7 +74,7 @@ bool check_palindrome(Node* head)
         temp = beg;
     }
     return true;
-    // TC - o(n)
+    // TC - o(n square)
     // SC - O(1)
 }
 

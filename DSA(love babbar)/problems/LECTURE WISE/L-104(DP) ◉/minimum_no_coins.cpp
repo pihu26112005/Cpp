@@ -6,7 +6,7 @@ https://www.naukri.com/code360/problems/minimum-elements_3843091?leftPanelTab=0&
 
 
 /**********************************************************************************************************************************************************************************************************************************/
-// my approach   TC=O(N),SC=O(1)
+// my approach   TC=O(N),SC=O(1)  Greedy Algorithm
 int minCoins (vector<int> coins , int amount)
 {
     int ans=0;
