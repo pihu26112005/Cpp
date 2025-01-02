@@ -1,30 +1,30 @@
-#include "../L-69(BINARY SEARCH TREE)/myclass2.h" 
-void check (node* root , bool& first , int& upper , int& lower)
-{
-    if (root->data > upper && root-> data < lower)
-    {
-        first = true ;
-    }
-    if(root->left)
-       check(root->left , first , root->data , lower);
-    if(root->right)
-       check(root->right , first , upper , root->data);
-    
-    return ;
-}
 
-bool validateBST(node* root) 
-{
-    if(root == NULL)
-    {
-        return true ;
+// upper lower ki rang bada di 
+
+class Solution {
+public:
+    void check(TreeNode* root, bool& first, long long upper, long long lower) {
+        if (root == NULL)
+            return;
+
+        if (root->val <= lower || root->val >= upper) {
+            first = false;
+            return;
+        }
+
+        check(root->left, first, root->val, lower);
+        check(root->right, first, upper, root->val);
     }
 
-    bool first = true;
-    int lower = INT64_MIN ;
-    int upper = INT64_MAX ;
+    bool isValidBST(TreeNode* root) {
+        if (root == NULL)
+            return true;
 
-    check(root , first , upper , lower);
+        bool first = true;
+        long long lower = LLONG_MIN;
+        long long upper = LLONG_MAX;
 
-    return first ;
-}
+        check(root, first, upper, lower);
+        return first;
+    }
+};
