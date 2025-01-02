@@ -37,6 +37,7 @@ int burnTree(node* targetNode , map<node* ,node*> &nodeToTparent)
     queue<node*> q;
     q.push(targetNode);
     int time = 0;
+    visited[targetNode] = true; // Fix: Mark the target node as visited
 
     while (!q.empty())// level order traverse 
     {
