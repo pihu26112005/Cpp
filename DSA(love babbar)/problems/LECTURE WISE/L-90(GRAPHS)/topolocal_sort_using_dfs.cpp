@@ -17,6 +17,6 @@ void topologicSort (unordered_map<int,list<int>> adj , unordered_map<int,bool> &
         }
     }
     ans.push(node);
-    std::reverse(ans.begin(), ans.end()); // Reverse to get the correct topological order
-]
+    // std::reverse(ans.begin(), ans.end()); // Reverse to get the correct topological order
+    // agar stack se final ve ctor me store kroge toh automatically reverse ho jayega, but agar initial stack ki jagah vec tor us kroge toh end me reverse krna padega
 }
