@@ -17,4 +17,6 @@ void topologicSort (unordered_map<int,list<int>> adj , unordered_map<int,bool> &
         }
     }
     ans.push(node);
+    std::reverse(ans.begin(), ans.end()); // Reverse to get the correct topological order
+]
 }
