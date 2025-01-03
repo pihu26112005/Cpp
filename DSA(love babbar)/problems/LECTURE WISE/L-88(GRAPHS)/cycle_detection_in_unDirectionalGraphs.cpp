@@ -5,6 +5,7 @@
 #include<queue>
 using namespace std ;
 
+// bfs based
 bool isCycle (unordered_map<int,list<int>> adj , unordered_map<int,bool> &visited , int node)
 {
     unordered_map<int,int> childTOparent;
@@ -34,5 +35,26 @@ bool isCycle (unordered_map<int,list<int>> adj , unordered_map<int,bool> &visite
             }
         }
     }
+    return false;
+}
+
+// ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+// dfs based
+bool isCycle(unordered_map<int, list<int>> &adj, unordered_map<int, bool> &visited, int node, int parent) {
+    visited[node] = true;
+
+    for (auto neighbor : adj[node]) {
+        if (!visited[neighbor]) {
+            // Recursive call for unvisited neighbors
+            if (isCycle(adj, visited, neighbor, node)) {
+                return true;
+            }
+        } else if (neighbor != parent) {
+            // If visited and not the parent, there's a cycle
+            return true;
+        }
+    }
+
     return false;
 }
