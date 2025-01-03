@@ -47,11 +47,11 @@ bool isCycle (unordered_map<int,list<int>> adj  , int node)
 
     if(count == adj.size())
     {
-        return true;
+        return false;
     }
     else
     {
-        return false;
+        return true;
     }
 }
  
