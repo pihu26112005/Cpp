@@ -1,3 +1,5 @@
+// this is for undirected graph with no weights., i.e. all edges have same weight.
+
 // this gives the shortest path from startNode to endNode in an unDirected graph.
 
 #include<iostream>
