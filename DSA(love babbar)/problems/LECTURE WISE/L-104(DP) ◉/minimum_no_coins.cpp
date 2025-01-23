@@ -3,8 +3,10 @@
 using namespace std;
 
 https://www.naukri.com/code360/problems/minimum-elements_3843091?leftPanelTab=0&utm_source=youtube&utm_medium=affiliate&utm_campaign=Lovebabbar
+https://leetcode.com/problems/coin-change/
+https://leetcode.com/problems/coin-change-ii/
 
-
+https://leetcode.com/problems/minimum-number-of-coins-for-fruits/ // karna hai 
 /**********************************************************************************************************************************************************************************************************************************/
 // my approach   TC=O(N),SC=O(1)  Greedy Algorithm
 int minCoins (vector<int> coins , int amount)
