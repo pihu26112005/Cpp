@@ -65,7 +65,7 @@ int cutRod(vector<int> &p, int n)
 
 // Min cost to cut a stick
 
-lic:
+
     // int h(int n, vector<int> c, int s, int e, int rs, int re)
     // {
     //     if(s>e)
