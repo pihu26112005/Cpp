@@ -5,6 +5,10 @@ using namespace std;
 
 https://www.naukri.com/code360/problems/number-of-ways_3755252?leftPanelTab=0&utm_source=youtube&utm_medium=affiliate&utm_campaign=Lovebabbar
 
+https://leetcode.com/problems/combination-sum/description/
+https://leetcode.com/problems/combination-sum-ii/description/
+https://leetcode.com/problems/combination-sum-iii/description/
+https://leetcode.com/problems/combination-sum-iv/description/
 
 /*******************************************************************************************************************************************************************************************/
 // recursion
