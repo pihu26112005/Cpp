@@ -64,3 +64,53 @@ int cutRod(vector<int> &p, int n)
 // --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 // Min cost to cut a stick
+
+lic:
+    // int h(int n, vector<int> c, int s, int e, int rs, int re)
+    // {
+    //     if(s>e)
+    //         return 0;
+    //     if(rs>=re)
+    //         return 0;
+    //     int m = (s+(e-s)/2);
+    //     int idx = c[m];
+    //     int cost = n;
+    //     int left = h(m-rs,c,s,m-1,rs,m);
+    //     int right = h(re-m,c,m+1,e,m,re);
+    //     return cost + left + right;
+    // }
+    // int minCost(int n, vector<int>& cuts) {
+    //     return h(n,cuts,0,cuts.size()-1,0,n);
+    // }
+
+    // maine socha tha kki har rod length pe bich me cut marte hi taaki aage jab unke left anf right parts me cut maare toh choti length consider krni pade 
+    // but eg - c = [1,2,3] , n = 100
+    // isme m = 2 aayega pahle, first hum 100 consider krenge ,a nd then 2 pe cut kke fir right part consider krenge 
+    // but agar 3 pe cur krte toh 100 sirf ek hi baar consider krna padta , baar baar nhi 
+
+    int h(int n, vector<int>& cuts, int s, int e, int rs, int re, vector<vector<int>> &dp) {
+        if (s > e) 
+            return 0;
+        if(dp[s][e]!=-1)
+            return dp[s][e];
+
+        int minCost = INT_MAX; 
+
+        for (int i = s; i <= e; ++i) {
+            int idx = cuts[i]; 
+            int cost = (re - rs); 
+            int left = h(n, cuts, s, i - 1, rs, idx,dp); // Left segment [rs, idx]
+            int right = h(n, cuts, i + 1, e, idx, re,dp); // Right segment [idx, re]
+
+            minCost = min(minCost, cost + left + right);
+        }
+        dp[s][e] = minCost;
+
+        return minCost;
+    }
+
+    int minCost(int n, vector<int>& cuts) {
+        sort(cuts.begin(), cuts.end());
+        vector<vector<int>> dp(cuts.size()+1,vector<int> (cuts.size()+1,-1));
+        return h(n, cuts, 0, cuts.size() - 1, 0, n,dp);
+    }
