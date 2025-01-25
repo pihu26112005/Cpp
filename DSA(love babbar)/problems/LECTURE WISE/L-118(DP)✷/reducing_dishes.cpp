@@ -1,6 +1,10 @@
 #include<iostream>
 #include<vector>
 using namespace std;
+
+// https://leetcode.com/problems/reducing-dishes/description/
+// https://www.naukri.com/code360/problems/minimum-dishes_2280380
+
 /**********************************************************************************************************************************************************************************************/
 // recursion
 int solve(vector<int> dishes , int index , int time)  // initial time should be 1 
