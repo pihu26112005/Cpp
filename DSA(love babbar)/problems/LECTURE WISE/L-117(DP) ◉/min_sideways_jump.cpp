@@ -1,6 +1,10 @@
 #include<iostream>
 #include<vector>
 using namespace std;
+
+// https://leetcode.com/problems/minimum-sideway-jumps/description/
+// https://www.naukri.com/code360/problems/minimum-jumps_1062693
+
 /**********************************************************************************************************************************************************************************************/
 // recursion
 int solve (vector<int> obstacle , int currLane , int currPos)
