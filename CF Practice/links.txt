@@ -1,2 +1,6 @@
 24 jan 
 - https://codeforces.com/contest/2063/problem/B
+
+26 jan 
+- https://codeforces.com/contest/2062/problem/A
+- https://codeforces.com/contest/2062/problem/B
