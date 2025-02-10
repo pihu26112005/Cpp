@@ -4,7 +4,7 @@ using namespace std;
 
 https://www.naukri.com/code360/problems/0-1-knapsack_920542?topList=love-babbar-dsa-sheet-problems&leftPanelTab=0&utm_source=youtube&utm_medium=affiliate&utm_campaign=Lovebabbar
 // leetcode 
-// https://leetcode.com/problems/partition-eq   ual-subset-sum/
+// https://leetcode.com/problems/partition-equal-subset-sum/
 // https://leetcode.com/problems/target-sum/
 // https://leetcode.com/problems/coin-change/
 // https://leetcode.com/problems/coin-change-2/
