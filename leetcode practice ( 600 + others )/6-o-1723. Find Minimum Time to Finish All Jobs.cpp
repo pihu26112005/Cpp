@@ -1,3 +1,5 @@
+// https://leetcode.com/problems/find-minimum-time-to-finish-all-jobs/description/
+
 class Solution {
     public:
         bool canAssign(int mid, int i, vector<int> w, vector<int> &jobs){
