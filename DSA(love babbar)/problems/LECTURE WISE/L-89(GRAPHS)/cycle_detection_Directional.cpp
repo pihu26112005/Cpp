@@ -29,3 +29,15 @@ bool isCycle (unordered_map<int,list<int>> adj , unordered_map<int,bool> &visite
     DFSvisited[node] = false;
     return false;
 }
+
+
+// In a directed graph, a cycle exists only if:
+// You can go from a node back to itself through its own DFS path (not just any visited node).
+
+// why not only vis se
+// 1 → 2 → 3
+// ↓    ↑
+// 4 → 5
+// If 3 was visited from another path earlier, but not part of current path, visited[3] would be true — but that doesn't mean there's a cycle.
+
+
